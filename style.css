@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #1a1b26; /* Background */
+  --surface-color: #2a2c3c; /* Surface */
+  --text-primary: #ffffff; /* Primary Text */
+  --text-secondary: #a5b2c1; /* Secondary Text */
+  --accent-color: #a4321c; /* USC Cardinal */
+  --highlight-color: #c2a34a; /* USC Gold */
+  --blue-color: #7aa2f7; /* Blue */
+  --purple-color: #bb9af7; /* Purple */
+  --yellow-color: #e0af68; /* Yellow */
+  --red-color: #ff5c7c; /* Red */
+  --green-color: #a3be8c; /* Green */
+  --orange-color: #d19a6a; /* Orange */
+}
+
+html,
+body {
+  /* font-family: "Playfair Display", serif; */
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  background-color: var(--bg--color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the content fills the screen height */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%; /* Adjust this percentage to control the width */
+  max-width: 800px; /* Limits the maximum width */
+  height: 100%; /* Occupy only 80% of the vertical screen space */
+  max-height: 100vh; /* Limit the height to the full viewport */
+  background-color: var(--bg-color);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  padding: 10px;
+}
+
+.fullscreen-iframe {
+  width: 100vw;      /* Full viewport width */
+  height: 100vh;     /* Full viewport height */
+  border: none;
+  display: block;    /* Ensures the iframe takes up the whole viewport */
+}
+
+footer {
+  text-align: right;
+  color: gray;
+}
