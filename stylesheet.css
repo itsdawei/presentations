@@ -43,24 +43,13 @@ body {
   min-height: 100vh; /* Ensure the content fills the screen height */
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  border-radius: 12px;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--text-primary);
-}
-
 .content-area {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 60%; /* Adjust this percentage to control the width */
-  max-width: 800px; /* Limits the maximum width */
+  width: 70%; /* Adjust this percentage to control the width */
+  max-width: 1000px; /* Limits the maximum width */
   height: 100%; /* Occupy only 80% of the vertical screen space */
   max-height: 100vh; /* Limit the height to the full viewport */
   background-color: var(--bg-color);
@@ -72,25 +61,13 @@ h1,
 h2,
 h3 {
   color: var(--text-primary);
-  margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-section {
-  padding: 10px;
-}
-
-.fullscreen-iframe {
-  width: 100vw;      /* Full viewport width */
-  height: 100vh;     /* Full viewport height */
-  border: none;
-  display: block;    /* Ensures the iframe takes up the whole viewport */
+.presentations {
+  ul li {
+    border-left: solid var(--accent-color);
+  }
 }
 
 footer {

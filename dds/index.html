@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Haolong Lee's Personal Page</title>
-    <link rel="stylesheet" href="../stylesheet.css" />
+    <title>Density Descent Search for Diversity Optimization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="content-area">
     <iframe
-      class="fullscreen-iframe"
+      id="ppt"
+      class="w-screen h-screen border-none block"
       src="https://docs.google.com/presentation/d/e/2PACX-1vT-BC8xKdnQ7gRN5uxEIhEYF2nCisAguRKCIq5-7Lsp5GoJQ6e3vuEsThGI1VMvgK7-ERZT62mSkeMF/embed?start=false&loop=false&delayms=3000"
       frameborder="0"
       allowfullscreen="true"
@@ -16,5 +17,14 @@
       webkitallowfullscreen="true"
       autofocus
     ></iframe>
+
+    <script>
+      window.onload = function () {
+        const iframe = document.getElementById("ppt");
+        if (iframe) {
+          iframe.focus();
+        }
+      };
+    </script>
   </body>
 </html>
