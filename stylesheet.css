@@ -64,12 +64,6 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-.presentations {
-  ul li {
-    border-left: solid var(--accent-color);
-  }
-}
-
 footer {
   text-align: right;
   color: gray;
